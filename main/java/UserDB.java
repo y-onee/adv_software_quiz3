@@ -14,6 +14,10 @@ public class UserDB {
         return task;
     }
 
+    public String getStatus(String status){
+        return status;
+    }
+
     public boolean assignTo(String member){
         Map<String, String> taskList = new HashMap<String, String>();
         taskList.put(getUser(), getTask());
@@ -22,6 +26,7 @@ public class UserDB {
         };
         return true;
     }
+
 
 
 }

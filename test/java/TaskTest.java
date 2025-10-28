@@ -14,8 +14,14 @@ public class TaskTest {
 
         String member = userDB.getUser();
 
-        assert(userDB.assignTo(member));
+        assertTrue(userDB.assignTo(member));
 
+    }
+
+    @Test void updateStatusTest() {
+        UserDB userDB = new UserDB();
+
+        assertTrue(userDB.getStatus());
     }
  
 }
