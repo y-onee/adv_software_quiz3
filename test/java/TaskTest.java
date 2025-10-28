@@ -9,12 +9,12 @@ import org.mockito.Mock;
 public class TaskTest {
 
     @Test
-    public void assignToTest(String team_member) {
+    public void assignToTest() {
         UserDB userDB = new UserDB();
 
-        String member = userDB.getUser(1);
+        String member = userDB.getUser();
 
-        assert(assignTo(member));
+        assert(userDB.assignTo(member));
 
     }
  

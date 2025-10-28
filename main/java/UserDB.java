@@ -1,7 +1,14 @@
 package main.java;
 
 public class UserDB {
-    void get(User user);
+    public String getUser(){
+        String userName = "member1";
+        return userName;
+    };
+
+    public boolean assignTo(String member){
+        return true;
+    }
 
 
 }
